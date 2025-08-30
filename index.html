@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite de Aniversário</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="invitation-card">
+      <h1>ANIVERSÁRIO DA ALEXANDRA</h1>
+      <p class="subtitle">Junte-se a nós para celebrar! Sua presença será um prazer!</p>
+      <div class="event-details">
+        <p>Sábado, 13 de Maio</p>
+        <p>14:00</p>
+        <p>100 Rua NOTE'ST, BRASILA-DF</p>
+      </div>
+      <button id="rsvp-button">Confirmar Presença</button>
+
+      <!-- Formulário de Confirmação de Presença -->
+      <div id="rsvp-form-container" class="hidden">
+        <form id="rsvp-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+
+           <label for="email">Email (opcional):</label>
+          <input type="email" id="email" name="email">
+          
+          <label for="attendance">Você estará presente?</label>
+          <select id="attendance" name="attendance" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+
+          <button type="submit">Confirmar</button>
+        </form>
+
+        <div id="confirmation-message" class="hidden">
+          <p>Obrigado por confirmar sua presença!</p>
+          <a id="whatsapp-link" href="#" target="_blank">
+            Confirmar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
